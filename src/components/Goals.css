@@ -1,0 +1,125 @@
+/* Base Styles */
+.container {
+    background-color: #252538;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c1c2e;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .goals-icon {
+    background-color: #ff6f61; /* color for Goals */
+    border-radius: 50%;
+  }
+  
+  .dishes-icon {
+    background-color: #3b5998; /* color for Popular Dishes */
+    border-radius: 50%;
+  }
+  
+  .menus-icon {
+    background-color: #1abc9c; /* color for Menus */
+    border-radius: 50%;
+  }
+  
+  .text {
+    flex-grow: 1;
+  }
+  
+  .arrow {
+    width: 24px;
+    height: 24px;
+    background-color: cornsilk;
+    border-radius: 15px;
+    background-image: url('../components/arrow.png'); /* Update the path to your arrow icon image */
+    background-size: cover;
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* Tablets and smaller screens */
+  @media only screen and (max-width: 991.98px) {
+    .container {
+      padding: 15px; /* Reduce padding */
+    }
+  
+    .menu-item {
+      padding: 8px; /* Reduce padding inside menu items */
+    }
+  
+    .icon {
+      width: 20px; /* Reduce icon size */
+      height: 20px; /* Reduce icon size */
+      margin-right: 8px; /* Adjust margin */
+    }
+  
+    .arrow {
+      width: 20px; /* Reduce arrow size */
+      height: 20px; /* Reduce arrow size */
+    }
+  }
+  
+  /* Mobile devices */
+  @media only screen and (max-width: 576px) {
+    .container {
+      padding: 10px; /* Further reduce padding */
+    }
+  
+    .menu-item {
+      padding: 6px; /* Further reduce padding inside menu items */
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .icon {
+      width: 18px; /* Further reduce icon size */
+      height: 18px; /* Further reduce icon size */
+      margin-right: 6px; /* Adjust margin */
+    }
+  
+    .arrow {
+      width: 18px; /* Further reduce arrow size */
+      height: 18px; /* Further reduce arrow size */
+    }
+  }
+  
+  /* Extra small devices */
+  @media only screen and (max-width: 400px) {
+    .container {
+      padding: 8px; /* Minimal padding */
+    }
+  
+    .menu-item {
+      padding: 4px; /* Minimal padding inside menu items */
+      flex-direction: column; /* Ensure vertical stacking */
+      align-items: center; /* Center align items */
+    }
+  
+    .icon {
+      width: 16px; /* Minimal icon size */
+      height: 16px; /* Minimal icon size */
+      margin-right: 4px; /* Minimal margin */
+    }
+  
+    .arrow {
+      width: 16px; /* Minimal arrow size */
+      height: 16px; /* Minimal arrow size */
+    }
+  }
+  

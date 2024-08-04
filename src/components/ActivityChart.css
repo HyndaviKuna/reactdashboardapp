@@ -1,0 +1,79 @@
+.activity {
+  background-color: #252538;
+  padding: 10px; /* Adjust padding for better spacing */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Chart Dropdown */
+.chart-dropdown {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.chart-dropdown select {
+  background-color: #2a2a3b;
+  border: none;
+  padding: 5px;
+  color: #fff;
+  border-radius: 4px; /* Add border-radius for better aesthetics */
+  font-size: 0.9rem; /* Adjust font size */
+}
+
+/* Responsive Adjustments */
+
+/* Tablets and smaller screens */
+@media only screen and (max-width: 991.98px) {
+  .activity {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .chart-dropdown {
+    margin-bottom: 10px; /* Reduce margin for smaller screens */
+  }
+
+  .chart-dropdown select {
+    padding: 4px; /* Adjust padding */
+    font-size: 0.8rem; /* Adjust font size */
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 576px) {
+  .activity {
+    padding: 6px; /* Further reduce padding */
+  }
+
+  .chart-dropdown {
+    margin-bottom: 8px; /* Further reduce margin */
+    justify-content: center; /* Center align dropdown on small screens */
+  }
+
+  .chart-dropdown select {
+    padding: 4px; /* Further adjust padding */
+    font-size: 0.7rem; /* Further adjust font size */
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 400px) {
+  .activity {
+    padding: 4px; /* Minimal padding for extra small screens */
+  }
+
+  .chart-dropdown {
+    margin-bottom: 6px; /* Minimal margin for extra small screens */
+    flex-direction: column; /* Stack items vertically if needed */
+    align-items: center; /* Center align items */
+  }
+
+  .chart-dropdown select {
+    padding: 3px; /* Minimal padding */
+    font-size: 0.6rem; /* Minimal font size */
+  }
+}

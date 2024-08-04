@@ -1,0 +1,41 @@
+.donut-chart {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #252538;
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  flex: 3;
+  min-width: 20px; /* Adjust min-width as needed */
+  margin-top:0px;
+}
+
+.chart-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 8px; /* Space between text and chart */
+}
+
+.chart-text h3 {
+  margin: 0 0 2px 0; /* Reduce margin to minimize height */
+  font-size: 1rem; /* Adjust font size if necessary */
+}
+
+.chart-text p {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.chart-container {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Ensure chart container has proper height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  background-color: black;
+  /* This is optional if body already has a black background */
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content {
+  margin-right: 10px;
+  flex: 40%;
+}
+
+/* @media (max-width: 700px) {
+  .left-content, .right-content {
+    flex: 1 1 100%;
+  }
+} */

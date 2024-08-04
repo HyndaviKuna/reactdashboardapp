@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #252538;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Ensure padding and margin are included in the width/height */
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 15px; /* Adjust padding for the search bar */
+  max-width: 300px; /* Limit the width of the search bar */
+  width: 100%;
+}
+
+.search-icon {
+  color: whitesmoke;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  color: #fff;
+  outline: none;
+  flex: 1; /* Allow the input to grow and fill available space */
+}
+
+/* Icons container styles */
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Header icon styles */
+.header-icon {
+  margin-left: 15px;
+  color: #fff;
+  cursor: pointer; /* Add pointer cursor */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.header-icon:hover {
+  color: #0088FE; /* Change color on hover */
+}
+
+/* Responsive adjustments */
+
+/* Tablets and smaller screens */
+@media only screen and (max-width: 991.98px) {
+  .header {
+    padding: 10px 15px; /* Reduce padding on smaller screens */
+  }
+
+  .search-bar {
+    max-width: 250px; /* Adjust max-width for smaller screens */
+  }
+
+  .header-icon {
+    margin-left: 10px; /* Reduce margin for icons */
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start in a column layout */
+    padding: 10px 10px; /* Further reduce padding */
+  }
+
+  .search-bar {
+    width: 100%;
+    max-width: none; /* Remove max-width constraint */
+    margin-bottom: 10px; /* Add margin below search bar */
+  }
+
+  .header-icon {
+    margin-left: 5px; /* Further reduce margin for icons */
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 400px) {
+  .header {
+    padding: 5px 5px; /* Minimize padding for very small screens */
+  }
+
+  .search-bar input {
+    padding: 8px; /* Adjust input padding */
+    font-size: 14px; /* Reduce font size for input */
+  }
+
+  .header-icon {
+    font-size: 16px; /* Further reduce font size for icons */
+  }
+}

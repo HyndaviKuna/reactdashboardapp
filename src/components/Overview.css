@@ -1,0 +1,230 @@
+/* Base Styles */
+.overview {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.overview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #252538;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.overview-icon1 {
+  font-size: 36px;
+  color: #21618c;
+  background-color: #aed6f1;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.overview-icon2 {
+  font-size: 36px;
+  color: #21618c;
+  background-color: #82e0aa;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.overview-icon3 {
+  font-size: 36px;
+  color: #21618c;
+  background-color: #f1948a;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.overview-icon4 {
+  font-size: 36px;
+  color: #21618c;
+  background-color: #f7dc6f;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.overview-card p {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.overview-card h3 {
+  margin: 5px 0 0 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.overview p {
+  font-size: 14px !important;
+}
+
+.total-orders {
+  width: 100%;
+}
+
+.stats-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.stat {
+  color: #00e200 !important;
+}
+
+.stat::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 15px;
+  bottom: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #00e200;
+  transform: translate(-50%, -50%);
+}
+
+.stat-red {
+  color: #ff0000;
+}
+
+.stat-red::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 15px;
+  bottom: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ff0000;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsive Adjustments */
+
+/* Tablets and smaller screens */
+@media only screen and (max-width: 991.98px) {
+  .overview {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 10px; /* Reduce gap */
+  }
+
+  .overview-card {
+    padding: 5px 15px; /* Reduce padding */
+    min-width: 150px; /* Reduce minimum width */
+  }
+
+  .icon-container {
+    width: 40px; /* Reduce icon container size */
+    height: 40px; /* Reduce icon container size */
+    margin-right: 10px; /* Reduce margin */
+  }
+
+  .overview-icon1,
+  .overview-icon2,
+  .overview-icon3,
+  .overview-icon4 {
+    font-size: 30px; /* Reduce icon font size */
+    padding: 6px; /* Reduce padding */
+  }
+
+  .overview-card h3 {
+    font-size: 1.25rem; /* Reduce header font size */
+  }
+
+  .overview-card p {
+    font-size: 0.875rem; /* Reduce paragraph font size */
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 576px) {
+  .overview {
+    flex-direction: column; /* Stack cards vertically on mobile */
+    gap: 10px; /* Adjust gap */
+  }
+
+  .overview-card {
+    padding: 5px 10px; /* Further reduce padding */
+    min-width: 100%; /* Ensure cards take full width */
+  }
+
+  .icon-container {
+    width: 35px; /* Further reduce icon container size */
+    height: 35px; /* Further reduce icon container size */
+    margin-right: 8px; /* Further reduce margin */
+  }
+
+  .overview-icon1,
+  .overview-icon2,
+  .overview-icon3,
+  .overview-icon4 {
+    font-size: 24px; /* Further reduce icon font size */
+    padding: 5px; /* Further reduce padding */
+  }
+
+  .overview-card h3 {
+    font-size: 1rem; /* Further reduce header font size */
+  }
+
+  .overview-card p {
+    font-size: 0.75rem; /* Further reduce paragraph font size */
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 400px) {
+  .overview {
+    gap: 5px; /* Minimal gap */
+  }
+
+  .overview-card {
+    padding: 5px 5px; /* Minimal padding */
+    min-width: 100%; /* Ensure cards take full width */
+  }
+
+  .icon-container {
+    width: 30px; /* Minimal icon container size */
+    height: 30px; /* Minimal icon container size */
+    margin-right: 5px; /* Minimal margin */
+  }
+
+  .overview-icon1,
+  .overview-icon2,
+  .overview-icon3,
+  .overview-icon4 {
+    font-size: 20px; /* Minimal icon font size */
+    padding: 4px; /* Minimal padding */
+  }
+
+  .overview-card h3 {
+    font-size: 0.875rem; /* Minimal header font size */
+  }
+
+  .overview-card p {
+    font-size: 0.625rem; /* Minimal paragraph font size */
+  }
+}

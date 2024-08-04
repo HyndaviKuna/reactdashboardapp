@@ -1,0 +1,95 @@
+.sidebar {
+  width: 60px;
+  background-color: #252538;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  height: 100vh; /* Full height sidebar */
+  box-sizing: border-box;
+  transition: width 0.3s; /* Smooth transition for width change */
+}
+
+/* Inner sidebar styles */
+.inner-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Active link styles */
+.active {
+  color: #0088FE !important;
+}
+
+.border-active {
+  border-left: 3px solid #0088FE;
+}
+
+/* Sidebar icon styles */
+.sidebar-icon {
+  font-size: 28px;
+  margin: 20px 0;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar-icon:hover {
+  color: #0088FE;
+}
+
+/* Container for sidebar items */
+.sidebar-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+
+/* For tablets and smaller screens */
+@media only screen and (max-width: 991.98px) {
+  .sidebar {
+    width: 50px;
+  }
+
+  .sidebar-icon {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 576px) {
+  .sidebar {
+    width: 40px;
+  }
+
+  .sidebar-icon {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .inner-sidebar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sidebar-contain {
+    display: none; /* Optionally hide content in very small screens */
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 400px) {
+  .sidebar {
+    width: 35px;
+  }
+
+  .sidebar-icon {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+}

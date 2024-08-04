@@ -1,0 +1,121 @@
+.feedback {
+  background-color: #252538;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 288px; /* Set the maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 0px;
+}
+
+/* Hide scrollbar for Safari and Chrome */
+.feedback::-webkit-scrollbar {
+  display: none;
+}
+
+/* Title styles */
+.feedback h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem; /* Adjust font size for headings */
+  color: #fff; /* Ensure heading color is visible */
+}
+
+/* Feedback card container */
+.feedback-card {
+  margin-bottom: 10px; /* Provide spacing between feedback cards */
+  background-color: #333; /* Optional: Add background color for cards */
+  padding: 10px; /* Add padding inside cards */
+  border-radius: 8px; /* Round the corners of the cards */
+}
+
+/* Feedback card title */
+.feedback-card h4 {
+  margin: 0;
+  font-size: 1rem; /* Adjust font size */
+  color: #fff; /* Ensure text color is visible */
+}
+
+/* Feedback card text */
+.feedback-card p {
+  margin: 0;
+  font-size: 0.9rem; /* Adjust font size */
+  color: #ccc;
+}
+
+/* Rating styles */
+.feedback-card .rating span {
+  color: #ffd700;
+}
+
+/* Responsive Adjustments */
+
+/* Tablets and smaller screens */
+@media only screen and (max-width: 991.98px) {
+  .feedback {
+    max-height: 250px; /* Adjust max-height for smaller screens */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .feedback h3 {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .feedback-card {
+    padding: 8px; /* Adjust padding inside cards */
+  }
+
+  .feedback-card h4 {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .feedback-card p {
+    font-size: 0.8rem; /* Adjust font size */
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 576px) {
+  .feedback {
+    max-height: 200px; /* Further reduce max-height */
+    padding: 5px; /* Further reduce padding */
+  }
+
+  .feedback h3 {
+    font-size: 1rem; /* Further adjust font size */
+  }
+
+  .feedback-card {
+    padding: 5px; /* Further adjust padding inside cards */
+  }
+
+  .feedback-card h4 {
+    font-size: 0.8rem; /* Further adjust font size */
+  }
+
+  .feedback-card p {
+    font-size: 0.7rem; /* Further adjust font size */
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 400px) {
+  .feedback {
+    max-height: 180px; /* Further reduce max-height */
+    padding: 5px; /* Keep minimal padding */
+  }
+
+  .feedback h3 {
+    font-size: 0.9rem; /* Further adjust font size */
+  }
+
+  .feedback-card {
+    padding: 4px; /* Minimal padding */
+  }
+
+  .feedback-card h4 {
+    font-size: 0.7rem; /* Minimal font size */
+  }
+
+  .feedback-card p {
+    font-size: 0.6rem; /* Minimal font size */
+  }
+}

@@ -1,0 +1,58 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white;
+  padding: 10px; /* Add padding for better spacing */
+}
+
+/* Responsive Adjustments */
+
+/* Tablets and smaller screens */
+@media only screen and (max-width: 991.98px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Adjust font size for tablets */
+    padding: 8px; /* Adjust padding */
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 576px) {
+  .App-header {
+    font-size: calc(6px + 2vmin); /* Further reduce font size for mobile */
+    padding: 6px; /* Further reduce padding */
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 400px) {
+  .App-header {
+    font-size: calc(5px + 2vmin); /* Minimal font size for extra small screens */
+    padding: 4px; /* Minimal padding */
+  }
+}
